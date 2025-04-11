@@ -1,5 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/Timeline.jsx'
+//import Timeline from './components/Timeline.jsx';
+import TimelineItem from './components/TimelineItem.jsx';
+
+
+
 
 function App() {
   return (
@@ -17,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <TimelineItem></TimelineItem>
       </header>
     </div>
   );

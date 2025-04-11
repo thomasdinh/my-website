@@ -1,0 +1,29 @@
+.timeline-container {
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Space between the year and content */
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff; /* White text */
+}
+
+.timeline-year {
+  flex: 0 3 auto;
+  padding: 10px;
+  font-size: 1.2em; /* Increase font size for the year */
+  color: #ffa500; /* Blue color for the year */
+}
+
+.timeline-content {
+  flex: 1; /* Allow the content box to take up remaining space */
+}
+
+.timeline-content h3 {
+  
+  color: #ffa500; /* Orange color for the heading */
+}
+
+.timeline-content p {
+  font-size: 1em; /* Adjust paragraph size */
+  color: #ddd; /* Light gray color for the text */
+}
