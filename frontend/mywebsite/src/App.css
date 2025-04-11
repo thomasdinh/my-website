@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.timelineList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

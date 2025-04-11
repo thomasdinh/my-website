@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/Timeline.jsx'
+import './components/Timeline.jsx';
 //import Timeline from './components/Timeline.jsx';
-import TimelineItem from './components/TimelineItem.jsx';
+import TimelineItem, {timestamp} from './components/TimelineItem.jsx';
 
 
 
 
 function App() {
+  const first_job = new timestamp(2018, "Customer Support", "Working...");
+  const second_job = new timestamp(2019, "Customer Support", "Working...");
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,7 +26,10 @@ function App() {
         >
           Learn React
         </a>
-        <TimelineItem></TimelineItem>
+        <div className='timelineList'>
+          <TimelineItem timestamp={first_job}/>
+          <TimelineItem timestamp={second_job}/>
+        </div>
       </header>
     </div>
   );

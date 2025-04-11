@@ -1,12 +1,23 @@
 import '../css/TimelineItem.css'
 
-function TimelineItem() {
+export class timestamp{
+    constructor(date, job, description){
+        this.date = date;
+        this.job = job;
+        this.description = description;
+    }
+}
+
+
+
+
+function TimelineItem({timestamp}) {
     return (
         <div className="timeline-container">
-            <div className="timeline-year">2005</div>
+            <div className="timeline-year">{timestamp.date}</div>
             <div className="timeline-content">
-                <h3>Creative Component Launched</h3>
-                <p>"We can be all things to all people!"</p>
+                <h3>{timestamp.job}</h3>
+                <p>{timestamp.description}</p>
             </div>
         </div>
     );
